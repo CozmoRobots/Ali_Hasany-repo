@@ -1,0 +1,25 @@
+For ML model training:
+tensorflow     		  	2.13.1
+python 				3.8.10
+OS	 			Ubuntu 20.04.6 LTS
+numpy 				1.24.3
+matplotlib 			3.7.4
+
+For Cozmo:
+python 			     3.9.7
+OS			     windows 10
+cozmo                        1.4.10
+cozmoclad                    3.4.0
+keras                        2.13.1
+matplotlib                   3.8.0
+numpy                        1.24.3
+opencv-python                4.8.1.78
+pandas                       2.1.1
+Pillow                       10.0.0
+scikit-learn                 1.3.1
+scipy                        1.11.3
+seaborn                      0.13.0
+sklearn                      0.0
+sympy                        1.12
+tensorflow                   2.13.0
+torch                        2.1.0
