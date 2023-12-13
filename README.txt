@@ -33,9 +33,26 @@ For Windows users/ Powershell:
   >>$env:CUDA_VISIBLE_DEVICES= ""; python train.py
 4) After training is finished you will see the file "best_mode_4.h5" in the parent directory
 
-STEP 3: Playing Blackjack with Cozmo
+STEP 3: Copying trained model to relevant directory
 1) move the file 'best_model_4.h5' to the 'cozmo_BJ_sim' directory. Stay in the parent directory when issuing the following command!
   >>cp best_model_4.h5 ./cozmo_BJ_sim/
+For Windows users just copy and paste the file or if using Powershell issue the following command:
+  >>Copy-Item -Path "best_model_4.h5" -Destination ".\cozmo_BJ_sim\"
+2) Now move to the 'cozmo_BJ_sim' directory
+  >>cd cozmo_BJ_sim
+3) Open the file 'cozmo_as_player.py'in any text editor of your choice
+if you have VS code issue the following command:
+  >>code -n cozmo_as_player.py
+in line 37 change the following line:
+model = load_model('best_model_2.h5')
+to 
+model = load_model('best_model_4.h5')
+
+If you do not make the changes in the file above as mentioned it will simply use the model that I trained earlier
+
+STEP 4: Playing Blackjack with Cozmo!
+1) run the file 'cozmo_as_player.py'
+>>python cozmo_as_player.py
 
 
 
